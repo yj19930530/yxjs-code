@@ -1,0 +1,81 @@
+{
+	"pages": [
+		{
+			"path": "pages/page/home",
+			"style": {
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/page/shop",
+			"style": {
+				"navigationBarTitleText": "商城",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/page/me",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/login",
+			"style": {
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		}
+	],
+	"subPackages": [
+		{
+			"root": "subPackages",
+			"pages": [
+				{
+					"path": "homes/index",
+					"style": {
+						"navigationBarTitleText": "新增订单"
+					}
+				}
+			]
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#ffffff",
+		"backgroundColor": "#ffffff"
+	},
+	"tabBar": {
+		"color": "#999999FF",
+		"selectedColor": "#333333FF",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/page/home",
+				"iconPath": "static/home.png",
+				"selectedIconPath": "static/homec.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/page/shop",
+				"iconPath": "static/shop.png",
+				"selectedIconPath": "static/shopc.png",
+				"text": "商城"
+			},
+			{
+				"pagePath": "pages/page/me",
+				"iconPath": "static/me.png",
+				"selectedIconPath": "static/mec.png",
+				"text": "我的"
+			}
+		]
+	}
+}
