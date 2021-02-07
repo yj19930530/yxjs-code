@@ -1,7 +1,8 @@
 <template>
   <view class="box">
     <view class="cp-content fl-cen">
-      <image class="cp-img-back" src="../../static/home/line-ban.png"></image>
+      <image class="cp-img-back" src="../../static/home/line-ban2.png"></image>
+      <!-- <image class="cp-img-back" src="../../static/home/line-ban.png"></image> -->
       <view class="boxContent">
         <view class="boxContent2">
           <view class="before" :style="{ top: 100 - percent + '%' }"></view>
@@ -13,15 +14,15 @@
           <text class="fz-17 fc-108 mr-t-10">添加设备</text>
         </view>
         <view class="percent2" v-else>
-			<text class="fz-14 fc-108">净水水质</text>
-			<div class="ppm-show">
-				<text class="fz-70 fc-108">20</text>
-				<text class="fz-12 fc-108">PPM</text>
-			</div>
-		</view>
-		<view class="percent-num fl-cen" v-if="showType !== 'add'">
-			<text class="fz-12 fc-fff">45%</text>
-		</view>
+          <text class="fz-14" :style="{ color: bg }">净水水质</text>
+          <div class="ppm-show">
+            <text class="fz-70" :style="{ color: bg }">20</text>
+            <text class="fz-12" :style="{ color: bg }">PPM</text>
+          </div>
+        </view>
+        <view class="percent-num fl-cen" v-if="showType !== 'add'">
+          <text class="fz-12 fc-fff">45%</text>
+        </view>
       </view>
     </view>
   </view>
@@ -143,11 +144,11 @@ export default {
   text-align: center;
 }
 .ppm-show {
-	margin-top: -20rpx;
+  margin-top: -20rpx;
 }
 .percent-num {
-	position: absolute;
-	bottom: 34rpx;
-	width: 378rpx;
+  position: absolute;
+  bottom: 34rpx;
+  width: 378rpx;
 }
 </style>

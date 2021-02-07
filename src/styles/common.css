@@ -50,6 +50,9 @@
 .fz-26{
     font-size: 52rpx !important;
 }
+.fz-28{
+    font-size: 56rpx !important;
+}
 .fz-39{
     font-size: 78rpx !important;
 }
@@ -79,10 +82,25 @@
     color: #999 !important;
 }
 .fc-333 {
-    color: #333333 !important;
+    color: #333333FF !important;
+}
+.fc-666 {
+    color: #666666FF !important;
 }
 .fc-108 {
     color: #108EE9FF !important;
+}
+.fc-4bb {
+    color: #4BBCFBFF !important;
+}
+.bg-4bb {
+    background-color: #4bbcfbff;
+}
+.bg-ffb {
+    background-color: #FFBE75FF;
+}
+.bg-f96 {
+    background-color: #F96061FF;
 }
 /* 布局 */
 .fl-cen {
