@@ -30,10 +30,10 @@
         @tap="errHandle"
       ></image>
     </div>
-
     <CirclePercent
       class="circle-content"
       :bg="'#FFBE75FF'"
+      :circleBf="'#F38304FF'"
       percent="45"
       :showType="showType"
     />
@@ -92,7 +92,7 @@
           你的滤芯即将用完，请及时更换，请及时处理！及时处理！
         </div>
         <div class="box-width-508 fl-sb mr-t-30">
-          <div class="fl-cen device-btn-xiu">
+          <div class="fl-cen device-btn-xiu" @tap="toRepair">
             <text class="fz-14 fc-fff">去报修</text>
           </div>
           <div class="fl-cen device-btn-xiu2">
@@ -141,6 +141,11 @@ export default {
     errHandle() {
       console.log(this.$refs);
       this.$refs.popup.open();
+    },
+    toRepair() {
+      uni.navigateTo({
+        url: "/subPackages/home/repair",
+      });
     },
   },
 };

@@ -6,7 +6,7 @@
       <view class="boxContent">
         <view class="boxContent2">
           <view class="before" :style="{ top: 100 - percent + '%' }"></view>
-          <view class="jd" :style="{ background: bg }"></view>
+          <view class="jd" :style="{ background: circleBf }"></view>
           <view class="after" :style="{ top: 102 - percent + '%' }"></view>
         </view>
         <view class="percent fl-ccc" v-if="showType === 'add'">
@@ -14,10 +14,10 @@
           <text class="fz-17 fc-108 mr-t-10">添加设备</text>
         </view>
         <view class="percent2" v-else>
-          <text class="fz-14" :style="{ color: bg }">净水水质</text>
+          <text class="fz-14" :style="{ color: circleBf }">净水水质</text>
           <div class="ppm-show">
-            <text class="fz-70" :style="{ color: bg }">20</text>
-            <text class="fz-12" :style="{ color: bg }">PPM</text>
+            <text class="fz-70" :style="{ color: circleBf }">20</text>
+            <text class="fz-12" :style="{ color: circleBf }">PPM</text>
           </div>
         </view>
         <view class="percent-num fl-cen" v-if="showType !== 'add'">
@@ -32,6 +32,10 @@ export default {
   name: "circle-percent",
   props: {
     bg: {
+      type: String,
+      default: "red",
+    },
+    circleBf: {
       type: String,
       default: "red",
     },

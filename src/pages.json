@@ -35,12 +35,29 @@
 	],
 	"subPackages": [
 		{
-			"root": "subPackages",
+			"root": "subPackages/home",
 			"pages": [
 				{
-					"path": "homes/index",
+					"path": "repair",
 					"style": {
-						"navigationBarTitleText": "新增订单"
+						"navigationBarTitleText": "一键报修"
+					}
+				}
+			]
+		},
+		{
+			"root": "subPackages/shop",
+			"pages": [
+				{
+					"path": "goodsDetails",
+					"style": {
+						"navigationBarTitleText": "商品详情"
+					}
+				},
+				{
+					"path": "orderComfirm",
+					"style": {
+						"navigationBarTitleText": "确认订单"
 					}
 				}
 			]
