@@ -3,9 +3,14 @@
     <!-- <div :style="[{ height: navHeight + 'px' }]"></div> -->
     <div :style="[{ height: navHeight + 'px' }]" class="device-top-box">
       <image
+        class="device-add-img3 mr-l-30"
+        src="../../static/home/sao.png"
+        @tap="toGetWater"
+      ></image>
+      <!-- <image
         class="device-add-img2 mr-l-30"
         src="../../static/home/add2.png"
-      ></image>
+      ></image> -->
     </div>
     <!-- <text class="fz-16 fc-fff fw-bold mr-t-40">暂无设备</text> -->
     <div style="position: relative">
@@ -51,11 +56,14 @@
         src="../../static/home/home-bottom.png"
       ></image>
     </div>
-    <!--  -->
-    <!-- <div class="fl-ccc device-xiu-btn">
+    <div class="fl-ccc device-xiu-btn">
       <image class="device-xiu-img" src="../../static/home/xiu.png"></image>
       <text class="fz-12 fc-4bb mr-t-4">一键报修</text>
-    </div> -->
+    </div>
+    <div class="fl-ccc device-water-btn" @tap="toSendWater">
+      <image class="device-water-img" src="../../static/home/water.png"></image>
+      <text class="fz-12 fc-4bb mr-t-4">一键送水</text>
+    </div>
     <div class="device-bottom-footer">
       <!-- <image
         class="device-bolang-img"
@@ -132,7 +140,7 @@ export default {
     }, // 头部胶囊高度
   },
   onLoad() {
-    console.log(this.navHeight);
+    // console.log(this.navHeight);
   },
   methods: {
     bindPickerChange(val) {
@@ -145,6 +153,16 @@ export default {
     toRepair() {
       uni.navigateTo({
         url: "/subPackages/home/repair",
+      });
+    },
+    toSendWater() {
+      uni.navigateTo({
+        url: "/subPackages/home/sendWater",
+      });
+    },
+    toGetWater() {
+      uni.navigateTo({
+        url: "/subPackages/home/codeWater",
       });
     },
   },
@@ -188,8 +206,22 @@ export default {
   border-radius: 50%;
   z-index: 9;
 }
+.device-water-btn {
+  position: absolute;
+  bottom: 192rpx;
+  right: 18rpx;
+  width: 136rpx;
+  height: 136rpx;
+  background-color: #fff;
+  border-radius: 50%;
+  z-index: 9;
+}
 .device-xiu-img {
   width: 72rpx;
+  height: 60rpx;
+}
+.device-water-img {
+  width: 44rpx;
   height: 60rpx;
 }
 .device-bolang-img {
@@ -216,6 +248,11 @@ export default {
   margin-bottom: 10rpx;
   width: 48rpx;
   height: 48rpx;
+}
+.device-add-img3 {
+  margin-bottom: 10rpx;
+  width: 44rpx;
+  height: 44rpx;
 }
 .device-top-box {
   display: flex;

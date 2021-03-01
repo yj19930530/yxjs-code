@@ -56,7 +56,6 @@ page {
 }
 .row-title-text {
   width: 396rpx;
-  height: 72rpx;
 }
 .shopping-row-content {
   margin-bottom: 90rpx;

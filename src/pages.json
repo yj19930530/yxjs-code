@@ -19,8 +19,10 @@
 		{
 			"path": "pages/page/me",
 			"style": {
-				"navigationBarTitleText": "我的",
-				"enablePullDownRefresh": true
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleNView": false
+				}
 			}
 		},
 		{
@@ -42,6 +44,77 @@
 					"style": {
 						"navigationBarTitleText": "一键报修"
 					}
+				},
+				{
+					"path": "sendWater",
+					"style": {
+						"navigationBarTitleText": "送水上门"
+					}
+				},
+				{
+					"path": "historyRecode",
+					"style": {
+						"navigationBarTitleText": "历史记录"
+					}
+				},
+				{
+					"path": "codeWater",
+					"style": {
+						"navigationBarTitleText": "扫码取水"
+					}
+				},
+				{
+					"path": "waterRecode",
+					"style": {
+						"navigationBarTitleText": "取水记录"
+					}
+				}
+			]
+		},
+		{
+			"root": "subPackages/mine",
+			"pages": [
+				{
+					"path": "myWallet",
+					"style": {
+						"navigationBarTitleText": "我的钱包"
+					}
+				},
+				{
+					"path": "recharge",
+					"style": {
+						"navigationBarTitleText": "充值"
+					}
+				},
+				{
+					"path": "rechargeRecode",
+					"style": {
+						"navigationBarTitleText": "充值记录"
+					}
+				},
+				{
+					"path": "profitRecode",
+					"style": {
+						"navigationBarTitleText": "收益明细"
+					}
+				},
+				{
+					"path": "withdrawal",
+					"style": {
+						"navigationBarTitleText": "提现"
+					}
+				},
+				{
+					"path": "withdrawalResult",
+					"style": {
+						"navigationBarTitleText": "结果详情"
+					}
+				},
+				{
+					"path": "myCode",
+					"style": {
+						"navigationBarTitleText": "我的收款码"
+					}
 				}
 			]
 		},
@@ -58,6 +131,24 @@
 					"path": "orderComfirm",
 					"style": {
 						"navigationBarTitleText": "确认订单"
+					}
+				},
+				{
+					"path": "payResult",
+					"style": {
+						"navigationBarTitleText": "支付信息"
+					}
+				},
+				{
+					"path": "address",
+					"style": {
+						"navigationBarTitleText": "我的地址"
+					}
+				},
+				{
+					"path": "addAddress",
+					"style": {
+						"navigationBarTitleText": "编辑地址"
 					}
 				}
 			]

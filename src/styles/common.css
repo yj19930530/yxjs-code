@@ -56,6 +56,9 @@
 .fz-30{
     font-size: 60rpx !important;
 }
+.fz-32{
+    font-size: 64rpx !important;
+}
 .fz-39{
     font-size: 78rpx !important;
 }
@@ -99,6 +102,9 @@
 .fc-4bb {
     color: #4BBCFBFF !important;
 }
+.fc-637 {
+    color: #637EACFF !important;
+}
 .bg-4bb {
     background-color: #4bbcfbff;
 }
@@ -109,6 +115,9 @@
     background-color: #F96061FF;
 }
 /* 布局 */
+.fl-f {
+    display: flex;
+}
 .fl-cen {
     display: flex;
     align-items: center;
@@ -179,27 +188,66 @@
 .mr-t-40{
     margin-top: 40rpx;
 }
+.mr-t-48{
+    margin-top: 48rpx;
+}
 .mr-t-50{
     margin-top: 50rpx;
 }
+.mr-t-54{
+    margin-top: 54rpx;
+}
 .mr-t-60{
     margin-top: 60rpx;
+}
+.mr-t-90{
+    margin-top: 90rpx;
 }
 /* 左 */
 .mr-l-10{
     margin-left: 10rpx;
 }
+.mr-l-14{
+    margin-left: 14rpx;
+}
+.mr-l-18{
+    margin-left: 18rpx;
+}
 .mr-l-20{
     margin-left: 20rpx;
 }
+.mr-l-24{
+    margin-left: 24rpx;
+}
+.mr-l-26{
+    margin-left: 26rpx;
+}
 .mr-l-30{
     margin-left: 30rpx;
+}
+.mr-l-32{
+    margin-left: 32rpx;
+}
+.mr-l-38{
+    margin-left: 38rpx;
 }
 .mr-l-40{
     margin-left: 40rpx;
 }
 .mr-l-50{
     margin-left: 50rpx;
+}
+.mr-l-60{
+    margin-left: 60rpx;
+}
+.mr-l-64{
+    margin-left: 64rpx;
+}
+.mr-l-66{
+    margin-left: 66rpx;
+}
+.mr-l-112{
+    margin-left: 112rpx;
 }
 
 /* 下 */
@@ -222,11 +270,23 @@
 .mr-r-10{
     margin-right: 10rpx;
 }
+.mr-r-14{
+    margin-right: 14rpx;
+}
+.mr-r-18{
+    margin-right: 18rpx;
+}
 .mr-r-20{
     margin-right: 20rpx;
 }
+.mr-r-28{
+    margin-right: 28rpx;
+}
 .mr-r-30{
     margin-right: 30rpx;
+}
+.mr-r-32{
+    margin-right: 32rpx;
 }
 .mr-r-40{
     margin-right: 40rpx;
