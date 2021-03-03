@@ -115,6 +115,57 @@
 					"style": {
 						"navigationBarTitleText": "我的收款码"
 					}
+				},
+				{
+					"path": "codeEdit",
+					"style": {
+						"navigationBarTitleText": ""
+					}
+				},
+				{
+					"path": "myDevice",
+					"style": {
+						"navigationBarTitleText": "我的设备"
+					}
+				},
+				{
+					"path": "addDevice",
+					"style": {
+						"navigationBarTitleText": "绑定新设备"
+					}
+				},
+				{
+					"path": "setting",
+					"style": {
+						"navigationBarTitleText": "设置"
+					}
+				},
+				{
+					"path": "orderCenter",
+					"style": {
+						"navigationBarTitleText": "订单中心"
+					}
+				},
+				{
+					"path": "orderDetails",
+					"style": {
+						"navigationStyle": "custom",
+						"app-plus": {
+							"titleNView": false
+						}
+					}
+				},
+				{
+					"path": "refund",
+					"style": {
+						"navigationBarTitleText": "申请退款"
+					}
+				},
+				{
+					"path": "refundDetails",
+					"style": {
+						"navigationBarTitleText": "退款详情"
+					}
 				}
 			]
 		},
@@ -162,9 +213,9 @@
 	},
 	"tabBar": {
 		"color": "#999999FF",
-		"selectedColor": "#333333FF",
 		"borderStyle": "black",
 		"backgroundColor": "#ffffff",
+		"selectedColor": "#333333FF",
 		"list": [
 			{
 				"pagePath": "pages/page/home",

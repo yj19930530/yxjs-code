@@ -42,7 +42,7 @@
           </div>
           <div class="fl-al">
             <text class="fz-12 fc-fff">查看</text>
-            <image class="more-style" src="../../static/home/more.png"></image>
+            <image class="more-style" src="../../static/home/more2.png"></image>
           </div>
         </div>
         <div class="fl-cen">
@@ -74,7 +74,7 @@
         </div>
       </div>
       <div class="fl-sb mr-t-40">
-        <div class="fl-ccc mr-l-40">
+        <div class="fl-ccc mr-l-40" @tap="toMinePage('order')">
           <image class="order-row-icon" src="../../static/me/wait.png"></image>
           <text class="fz-12 fc-666 mr-t-20">待付款</text>
         </div>
@@ -100,7 +100,7 @@
     </div>
     <!-- 功能 -->
     <div class="mine-func-list mr-t-30">
-      <div class="func-item-box fl-sb">
+      <div class="func-item-box fl-sb" @tap="toMinePage('address')">
         <div class="fl-al">
           <image
             class="func-address-style"
@@ -110,14 +110,14 @@
         </div>
         <image class="func-more" src="../../static/home/more.png"></image>
       </div>
-      <div class="func-item-box fl-sb">
+      <div class="func-item-box fl-sb" @tap="toMinePage('code')">
         <div class="fl-al">
           <image class="func-code-style" src="../../static/me/code.png"></image>
           <text class="fz-14 mr-l-10">我的收款码</text>
         </div>
         <image class="func-more" src="../../static/home/more.png"></image>
       </div>
-      <div class="func-item-box fl-sb">
+      <div class="func-item-box fl-sb" @tap="toMinePage('device')">
         <div class="fl-al">
           <image
             class="func-device-style"
@@ -149,7 +149,7 @@
         </div>
         <image class="func-more" src="../../static/home/more.png"></image>
       </div>
-      <div class="func-item-box fl-sb">
+      <div class="func-item-box fl-sb" @tap="toMinePage('set')">
         <div class="fl-al">
           <image
             class="func-setting-style"
@@ -180,6 +180,43 @@ export default {
       uni.navigateTo({
         url: "/subPackages/mine/myWallet",
       });
+    },
+    toMinePage(type) {
+      switch (type) {
+        case "code": {
+          uni.navigateTo({
+            url: "/subPackages/mine/myCode",
+          });
+          break;
+        }
+        case "device": {
+          uni.navigateTo({
+            url: "/subPackages/mine/myDevice",
+          });
+          break;
+        }
+        case "set": {
+          uni.navigateTo({
+            url: "/subPackages/mine/setting",
+          });
+          break;
+        }
+        case "address": {
+          uni.navigateTo({
+            url: "/subPackages/shop/address",
+          });
+          break;
+        }
+        case "order": {
+          uni.navigateTo({
+            url: "/subPackages/mine/orderCenter",
+          });
+          break;
+        }
+        default: {
+          break;
+        }
+      }
     },
   },
 };
@@ -267,7 +304,7 @@ page {
 .more-style {
   margin-left: 8rpx;
   margin-right: 32rpx;
-  width: 12rpx;
+  width: 20rpx;
   height: 20rpx;
 }
 .look-img {

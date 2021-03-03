@@ -105,6 +105,9 @@
 .fc-637 {
     color: #637EACFF !important;
 }
+.fc-4fc {
+    color: #4FC0FAFF;
+}
 .bg-4bb {
     background-color: #4bbcfbff;
 }
@@ -147,6 +150,10 @@
     display: flex;
     flex-direction: column;
 }
+.fl-b{
+    display: flex;
+    justify-content: space-between;
+}
 /* 偏移 */
 /* 上 */
 .mr-t-2{
@@ -179,6 +186,9 @@
 .mr-t-20{
     margin-top: 20rpx;
 }
+.mr-t-24{
+    margin-top: 24rpx;
+}
 .mr-t-30{
     margin-top: 30rpx;
 }
@@ -187,6 +197,9 @@
 }
 .mr-t-40{
     margin-top: 40rpx;
+}
+.mr-t-44{
+    margin-top: 44rpx;
 }
 .mr-t-48{
     margin-top: 48rpx;
@@ -234,6 +247,12 @@
 .mr-l-40{
     margin-left: 40rpx;
 }
+.mr-l-44{
+    margin-left: 44rpx;
+}
+.mr-l-48{
+    margin-left: 48rpx;
+}
 .mr-l-50{
     margin-left: 50rpx;
 }
@@ -246,6 +265,9 @@
 .mr-l-66{
     margin-left: 66rpx;
 }
+.mr-l-70{
+    margin-left: 70rpx;
+}
 .mr-l-112{
     margin-left: 112rpx;
 }
@@ -253,6 +275,9 @@
 /* 下 */
 .mr-b-10{
     margin-bottom: 10rpx;
+}
+.mr-b-12{
+    margin-bottom: 12rpx;
 }
 .mr-b-20{
     margin-bottom: 20rpx;
@@ -267,6 +292,9 @@
     margin-bottom: 50rpx;
 }
 /* 右 */
+.mr-r-8{
+    margin-right: 8rpx;
+}
 .mr-r-10{
     margin-right: 10rpx;
 }
@@ -288,6 +316,9 @@
 .mr-r-32{
     margin-right: 32rpx;
 }
+.mr-r-36{
+    margin-right: 36rpx;
+}
 .mr-r-40{
     margin-right: 40rpx;
 }
@@ -308,6 +339,9 @@
 }
 .td-text{
     text-decoration: line-through;
+}
+.ta-right{
+    text-align: right;
 }
 .contact-btn {
     display: inline-block;

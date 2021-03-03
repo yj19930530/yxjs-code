@@ -5,7 +5,6 @@
         <div class="fz-15 text-width mr-l-20">收货人</div>
         <input
           class="input-style fz-15 mr-l-60"
-          focus
           placeholder="请填写姓名"
           placeholder-class="placeholder-style"
         />
@@ -14,7 +13,6 @@
         <div class="fz-15 text-width mr-l-20">手机号码</div>
         <input
           class="input-style fz-15 mr-l-60"
-          focus
           placeholder="请填写姓名"
           placeholder-class="placeholder-style"
         />
